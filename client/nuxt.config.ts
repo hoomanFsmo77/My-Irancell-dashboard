@@ -1,9 +1,21 @@
+import { createResolver } from '@nuxt/kit'
+const { resolve } = createResolver(import.meta.url)
+import vuetify from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-    build:{
-        transpile:[]
+
+    runtimeConfig:{
+      api_base:process.env.API_BASE
     },
-    css:['~/assets/App.scss'],
+    build:{
+        transpile: ['vuetify']
+    },
+    vite: {
+        define: {
+            'process.env.DEBUG': false,
+        },
+    },
+    css:['~/assets/App.scss','vuetify/lib/styles/main.sass','@mdi/font/css/materialdesignicons.min.css'],
     app:{
         rootId:'v-app',
         rootTag:'main',
@@ -22,4 +34,12 @@ export default defineNuxtConfig({
     modules: [
         '@pinia/nuxt','@nuxt/image-edge'
     ],
+    hooks: {
+        'vite:extendConfig': (config:any) => {
+            config.plugins.push(
+                vuetify({
+                    styles: { configFile: resolve('./settings.scss') },
+                })
+            )
+     }}
 })
