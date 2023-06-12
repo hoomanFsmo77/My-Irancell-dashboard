@@ -31,6 +31,7 @@
   --gray-650:#818181;
   --gray-600:#707070;
   --gray-700:#626161;
+  --blue:#00a3ff;
 }
 
 .d-flex {
@@ -989,7 +990,7 @@
   margin: 1.25rem !important;
 }
 
-.p-5 {
+.p-5, #right-sidebar {
   padding: 1.25rem !important;
 }
 
@@ -8952,6 +8953,11 @@
   --gray-650:#818181;
   --gray-600:#707070;
   --gray-700:#626161;
+  --blue:#00a3ff;
+}
+
+.text-blue {
+  color: var(--blue);
 }
 
 .text-white-50 {
@@ -8986,6 +8992,126 @@
   color: var(--gray-700);
 }
 
+.font-0 {
+  font-size: 0rem;
+}
+
+.font-1 {
+  font-size: 0.25rem;
+}
+
+.font-2 {
+  font-size: 0.5rem;
+}
+
+.font-3 {
+  font-size: 0.75rem;
+}
+
+.font-4 {
+  font-size: 1rem;
+}
+
+.font-5 {
+  font-size: 1.25rem;
+}
+
+.font-6 {
+  font-size: 1.5rem;
+}
+
+.font-7 {
+  font-size: 1.75rem;
+}
+
+.font-8 {
+  font-size: 2rem;
+}
+
+.font-9 {
+  font-size: 2.25rem;
+}
+
+.font-10 {
+  font-size: 2.5rem;
+}
+
+.font-11 {
+  font-size: 2.75rem;
+}
+
+.font-12 {
+  font-size: 3rem;
+}
+
+.font-13 {
+  font-size: 3.25rem;
+}
+
+.font-14 {
+  font-size: 3.5rem;
+}
+
+.font-15 {
+  font-size: 3.75rem;
+}
+
+.font-16 {
+  font-size: 4rem;
+}
+
+.font-17 {
+  font-size: 4.25rem;
+}
+
+.font-18 {
+  font-size: 4.5rem;
+}
+
+.font-19 {
+  font-size: 4.75rem;
+}
+
+.fw-0 {
+  font-weight: 0;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
 :root {
   --white-50:#fff;
   --white-100:#f6f6f6;
@@ -8995,6 +9121,11 @@
   --gray-650:#818181;
   --gray-600:#707070;
   --gray-700:#626161;
+  --blue:#00a3ff;
+}
+
+.bg-blue {
+  background-color: var(--blue);
 }
 
 .bg-white-50 {
@@ -9038,6 +9169,7 @@
   --gray-650:#818181;
   --gray-600:#707070;
   --gray-700:#626161;
+  --blue:#00a3ff;
 }
 
 :root {
@@ -9049,6 +9181,7 @@
   --gray-650:#818181;
   --gray-600:#707070;
   --gray-700:#626161;
+  --blue:#00a3ff;
 }
 
 :root {
@@ -9060,6 +9193,43 @@
   --gray-650:#818181;
   --gray-600:#707070;
   --gray-700:#626161;
+  --blue:#00a3ff;
+}
+
+#right-sidebar .profile-wrapper {
+  width: 85px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 5px var(--gold-400) solid;
+  display: flex;
+}
+#right-sidebar .profile-wrapper img {
+  object-fit: cover;
+}
+#right-sidebar .user-detail {
+  line-height: 1.2;
+}
+#right-sidebar .charge-diagram {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-top: 2rem !important;
+  margin: auto;
+  position: relative;
+  background-image: -webkit-linear-gradient(90deg, #e4ebec 50%, transparent 50%), -webkit-linear-gradient(right, var(--gold-400) 50%, #e4ebec 50%);
+}
+#right-sidebar .charge-diagram .overlay {
+  border-radius: 100%;
+  position: relative;
+  top: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 85%;
+  background-color: var(--gold-50);
+  margin: auto;
 }
 
 * {
@@ -9069,7 +9239,7 @@
 body {
   background-color: var(--white-100);
   display: grid;
-  grid-template-columns: 285px 1fr 265px;
+  grid-template-columns: 265px 1fr 285px;
   gap: 1rem;
 }
 
