@@ -1,0 +1,363 @@
+@import "../helper/Mixins";
+
+/////////// display flex
+.d-flex{
+  display: flex!important;
+  display: -moz-flex!important;
+  display: -webkit-flex!important;
+  display: -o-flex!important;
+  display: -ms-flex!important;
+}
+.flex-row{
+  flex-direction:row !important;
+  -webkit-flex-direction: row!important;
+}
+.flex-column{
+  flex-direction:column !important;
+  -webkit-flex-direction: column!important;
+}
+.flex-reverse{
+  flex-direction:row-reverse !important;
+  -webkit-flex-direction: row-reverse!important;
+}
+.justify-center{
+  justify-content:center !important;
+  -webkit-justify-content: center !important;
+}
+.justify-between{
+  justify-content:space-between !important;
+  -webkit-justify-content: space-between !important;
+}
+.justify-start{
+  justify-content:start !important;
+  -webkit-justify-content: flex-start !important;
+}
+.justify-end{
+  justify-content:end !important;
+  -webkit-justify-content: flex-end !important;
+}
+.align-center{
+  align-items: center!important;
+  -webkit-align-items: center!important;
+}
+.align-start{
+  align-items: start!important;
+  -webkit-align-items: flex-start!important;
+}
+.align-end{
+  align-items: end!important;
+  -webkit-align-items: flex-end!important;
+}
+.d-none{
+  display: none!important;
+}
+.d-block{
+  display: block!important;
+}
+.d-inline-block{
+  display: inline-block!important;
+}
+///////////////// display grid
+.d-grid{
+  display: grid!important;
+  display: -moz-grid!important;
+  display: -ms-grid!important;
+}
+@for $counter from 1 through 8{
+  .grid-#{$counter}{
+    grid-template-columns: repeat($counter,1fr) !important;
+  }
+  $counter:$counter+1
+}
+
+@include query(sm){ ///// max-width:500px
+  .d-sm-none{
+    display: none!important;
+  }
+  .d-sm-block{
+    display: block!important;
+  }
+  .d-sm-inline-block{
+    display: inline-block!important;
+  }
+  .d-sm-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
+  }
+  .flex-sm-row{
+    flex-direction:row !important;
+    -webkit-flex-direction: row!important;
+  }
+  .flex-sm-column{
+    flex-direction:row !important;
+    -webkit-flex-direction: row!important;
+  }
+  .flex-sm-reverse{
+    flex-direction:row-reverse !important;
+    -webkit-flex-direction: row-reverse!important;
+  }
+  .justify-sm-center{
+    justify-content:center !important;
+    -webkit-justify-content: center !important;
+  }
+  .justify-sm-between{
+    justify-content:space-between !important;
+    -webkit-justify-content: space-between !important;
+  }
+  .justify-sm-start{
+    justify-content:start !important;
+    -webkit-justify-content: flex-start !important;
+  }
+  .justify-sm-end{
+    justify-content:end !important;
+    -webkit-justify-content: flex-end !important;
+  }
+  .align-sm-center{
+    align-items: center!important;
+    -webkit-align-items: center!important;
+  }
+  .align-sm-start{
+    align-items: start!important;
+    -webkit-align-items: flex-start!important;
+  }
+  .align-sm-end{
+    align-items: end!important;
+    -webkit-align-items: flex-end!important;
+  }
+  @for $counter from 1 through 8{
+    .grid-sm-#{$counter}{
+      grid-template-columns: repeat($counter,1fr) !important;
+    }
+    $counter:$counter+1
+  }
+
+}
+@include query(md){ ///// max-width:768px
+  .d-md-none{
+    display: none!important;
+  }
+  .d-md-block{
+    display: block!important;
+  }
+  .d-md-inline-block{
+    display: inline-block!important;
+  }
+  .d-md-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
+  }
+  .flex-md-row{
+    flex-direction:row !important;
+    -webkit-flex-direction: row!important;
+  }
+  .flex-md-column{
+    flex-direction:row !important;
+    -webkit-flex-direction: row!important;
+  }
+  .flex-md-reverse{
+    flex-direction:row-reverse !important;
+    -webkit-flex-direction: row-reverse!important;
+  }
+  .justify-md-center{
+    justify-content:center !important;
+    -webkit-justify-content: center !important;
+  }
+  .justify-md-between{
+    justify-content:space-between !important;
+    -webkit-justify-content: space-between !important;
+  }
+  .justify-md-start{
+    justify-content:start !important;
+    -webkit-justify-content: flex-start !important;
+  }
+  .justify-md-end{
+    justify-content:end !important;
+    -webkit-justify-content: flex-end !important;
+  }
+  .align-md-center{
+    align-items: center!important;
+    -webkit-align-items: center!important;
+  }
+  .align-md-start{
+    align-items: start!important;
+    -webkit-align-items: flex-start!important;
+  }
+  .align-md-end{
+    align-items: end!important;
+    -webkit-align-items: flex-end!important;
+  }
+  @for $counter from 1 through 8{
+    .grid-md-#{$counter}{
+      grid-template-columns: repeat($counter,1fr) !important;
+    }
+    $counter:$counter+1
+  }
+}
+
+
+@include query(lg){ ///// max-width:960px
+  .d-lg-none{
+    display: none!important;
+  }
+  .d-lg-block{
+    display: block!important;
+  }
+  .d-lg-inline-block{
+    display: inline-block!important;
+  }
+  .d-lg-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
+  }
+  .flex-lg-row{
+    flex-direction:row !important;
+    -webkit-flex-direction: row!important;
+  }
+  .flex-lg-column{
+    flex-direction:column !important;
+    -webkit-flex-direction: column!important;
+  }
+  .flex-lg-reverse{
+    flex-direction:row-reverse !important;
+    -webkit-flex-direction: row-reverse!important;
+  }
+  .justify-lg-center{
+    justify-content:center !important;
+    -webkit-justify-content: center !important;
+  }
+  .justify-lg-between{
+    justify-content:space-between !important;
+    -webkit-justify-content: space-between !important;
+  }
+  .justify-lg-start{
+    justify-content:start !important;
+    -webkit-justify-content: flex-start !important;
+  }
+  .justify-lg-end{
+    justify-content:end !important;
+    -webkit-justify-content: flex-end !important;
+  }
+  .align-lg-center{
+    align-items: center!important;
+    -webkit-align-items: center!important;
+  }
+  .align-lg-start{
+    align-items: start!important;
+    -webkit-align-items: flex-start!important;
+  }
+  .align-lg-end{
+    align-items: end!important;
+    -webkit-align-items: flex-end!important;
+  }
+  @for $counter from 1 through 8{
+    .grid-lg-#{$counter}{
+      grid-template-columns: repeat($counter,1fr)!important;
+    }
+    $counter:$counter+1
+  }
+}
+
+@include query(xlg){ ///// max-width:1200px
+  .d-xlg-none{
+    display: none!important;
+  }
+  .d-xlg-block{
+    display: block!important;
+  }
+  .d-xlg-inline-block{
+    display: inline-block!important;
+  }
+  .d-xlg-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
+  }
+
+  .flex-xlg-row{
+    flex-direction:row !important;
+    -webkit-flex-direction: row!important;
+  }
+  .flex-xlg-column{
+    flex-direction:column !important;
+    -webkit-flex-direction: column!important;
+  }
+  .flex-xlg-reverse{
+    flex-direction:row-reverse !important;
+    -webkit-flex-direction: row-reverse!important;
+  }
+  .justify-xlg-center{
+    justify-content:center !important;
+    -webkit-justify-content: center !important;
+  }
+  .justify-xlg-between{
+    justify-content:space-between !important;
+    -webkit-justify-content: space-between !important;
+  }
+  .justify-xlg-start{
+    justify-content:start !important;
+    -webkit-justify-content: flex-start !important;
+  }
+  .justify-xlg-end{
+    justify-content:end !important;
+    -webkit-justify-content: flex-end !important;
+  }
+  .align-xlg-center{
+    align-items: center!important;
+    -webkit-align-items: center!important;
+  }
+  .align-xlg-start{
+    align-items: start!important;
+    -webkit-align-items: flex-start!important;
+  }
+  .align-xlg-end{
+    align-items: end!important;
+    -webkit-align-items: flex-end!important;
+  }
+  @for $counter from 1 through 8{
+    .grid-xlg-#{$counter}{
+      grid-template-columns: repeat($counter,1fr) !important;
+    }
+    $counter:$counter+1
+  }
+}
+
+/////////// gap
+$gp:0.5;$cg:1;
+@while($cg < 10){
+  .gap-#{$cg}{
+    gap: $gp+rem;
+  }
+  @include query(xlg){
+    .gap-xlg-#{$cg}{
+      gap: $gp+rem;
+    }
+  }
+  @include query(lg){
+    .gap-lg-#{$cg}{
+      gap: $gp+rem;
+    }
+  }
+  @include query(md){
+    .gap-md-#{$cg}{
+      gap: $gp+rem;
+    }
+  }
+  @include query(sm){
+    .gap-sm-#{$cg}{
+      gap: $gp+rem;
+    }
+  }
+  $cg:$cg+1;
+  $gp:$gp+0.5
+}

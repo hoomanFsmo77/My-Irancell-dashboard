@@ -1,0 +1,9 @@
+@import "../helper/Mixins";
+///////////////////////////////////////
+$radius:1;
+@while($radius < 30){
+  .radius-#{$radius}{
+    @include border-radius($radius+px);
+  }
+  $radius: $radius + 1
+}

@@ -1,0 +1,29 @@
+@import "../helper/Variable.scss";
+@import "../helper/Mixins";
+//////////////////////////////////////////
+.text-white-50{
+  color: var(--white-50);
+}
+.text-white-100{
+  color: var(--white-100);
+}
+.text-white-200{
+  color: var(--white-200);
+}
+.text-gold-50{
+  color: var(--gold-50);
+}
+.text-gold-400{
+  color: var(--gold-400);
+}
+.text-gray-650{
+  color: var(--gray-650);
+}
+.text-gray-600{
+  color: var(--gray-600);
+}
+.text-gray-700{
+  color: var(--gray-700);
+}
+
+

@@ -1,0 +1,517 @@
+@import "../helper/Mixins";
+////////////////////////////////
+$m:0;$c:0;
+@while($m < 7){
+  .m-#{$c}{
+    margin: $m+rem !important;
+  }
+  .p-#{$c}{
+    padding: $m+rem !important;
+  }
+  .mx-#{$c}{
+    margin-right: $m+rem !important;
+    margin-left: $m+rem !important;
+  }
+  .px-#{$c}{
+    padding-right: $m+rem !important;
+    padding-left: $m+rem !important;
+  }
+  .my-#{$c}{
+    margin-top: $m+rem !important;
+    margin-bottom: $m+rem !important;
+  }
+  .py-#{$c}{
+    padding-top: $m+rem !important;
+    padding-bottom: $m+rem !important;
+  }
+  .mt-#{$c}{
+    margin-top: $m+rem !important;
+  }
+  .pt-#{$c}{
+    padding-top: $m+rem !important;
+  }
+  .mb-#{$c}{
+    margin-bottom: $m+rem !important;
+  }
+  .pb-#{$c}{
+    padding-bottom: $m+rem !important;
+  }
+  .mr-#{$c}{
+    margin-right: $m+rem !important;
+  }
+  .pr-#{$c}{
+    padding-right: $m+rem !important;
+  }
+  .ml-#{$c}{
+    margin-left: $m+rem !important;
+  }
+  .pl-#{$c}{
+    padding-left: $m+rem !important;
+  }
+
+  $m:$m + 0.25;
+  $c:$c+1;
+}
+/////////////////////////
+$m_xlg:0;$c_xlg:0;
+@while($m_xlg < 7){
+  @include query(xlg){
+    .m-xlg-#{$c_xlg}{
+      margin: $m_xlg+rem !important;
+    }
+    .p-xlg-#{$c_xlg}{
+      padding: $m_xlg+rem !important;
+    }
+    .mx-xlg-#{$c_xlg}{
+      margin-right: $m_xlg+rem !important;
+      margin-left: $m_xlg+rem !important;
+    }
+    .px-xlg-#{$c_xlg}{
+      padding-right: $m_xlg+rem !important;
+      padding-left: $m_xlg+rem !important;
+    }
+    .my-xlg-#{$c_xlg}{
+      margin-top: $m_xlg+rem !important;
+      margin-bottom: $m_xlg+rem !important;
+    }
+    .py-xlg-#{$c_xlg}{
+      padding-top: $m_xlg+rem !important;
+      padding-bottom: $m_xlg+rem !important;
+    }
+    .mt-xlg-#{$c_xlg}{
+      margin-top: $m_xlg+rem !important;
+    }
+    .pt-xlg-#{$c_xlg}{
+      padding-top: $m_xlg+rem !important;
+    }
+    .mb-xlg-#{$c_xlg}{
+      margin-bottom: $m_xlg+rem !important;
+    }
+    .pb-xlg-#{$c_xlg}{
+      padding-bottom: $m_xlg+rem !important;
+    }
+    .mr-xlg-#{$c_xlg}{
+      margin-right: $m_xlg+rem !important;
+    }
+    .pr-xlg-#{$c_xlg}{
+      padding-right: $m_xlg+rem !important;
+    }
+    .ml-xlg-#{$c_xlg}{
+      margin-left: $m_xlg+rem !important;
+    }
+    .pl-xlg-#{$c_xlg}{
+      padding-left: $m_xlg+rem !important;
+    }
+  }
+  $m_xlg:$m_xlg + 0.25;
+  $c_xlg:$c_xlg+1;
+
+}
+///////////////////////////
+$m_lg:0;$c_lg:0;
+@while($m_lg < 7){
+  @include query(lg){
+    .m-lg-#{$c_lg}{
+      margin: $m_lg+rem !important;
+    }
+    .p-lg-#{$c_lg}{
+      padding: $m_lg+rem !important;
+    }
+    .mx-lg-#{$c_lg}{
+      margin-right: $m_lg+rem !important;
+      margin-left: $m_lg+rem !important;
+    }
+    .px-lg-#{$c_lg}{
+      padding-right: $m_lg+rem !important;
+      padding-left: $m_lg+rem !important;
+    }
+    .my-lg-#{$c_lg}{
+      margin-top: $m_lg+rem !important;
+      margin-bottom: $m_lg+rem !important;
+    }
+    .py-lg-#{$c_lg}{
+      padding-top: $m_lg+rem !important;
+      padding-bottom: $m_lg+rem !important;
+    }
+    .mt-lg-#{$c_lg}{
+      margin-top: $m_lg+rem !important;
+    }
+    .pt-lg-#{$c_lg}{
+      padding-top: $m_lg+rem !important;
+    }
+    .mb-lg-#{$c_lg}{
+      margin-bottom: $m_lg+rem !important;
+    }
+    .pb-lg-#{$c_lg}{
+      padding-bottom: $m_lg+rem !important;
+    }
+    .mr-lg-#{$c_lg}{
+      margin-right: $m_lg+rem !important;
+    }
+    .pr-lg-#{$c_lg}{
+      padding-right: $m_lg+rem !important;
+    }
+    .ml-lg-#{$c_lg}{
+      margin-left: $m_lg+rem !important;
+    }
+    .pl-lg-#{$c_lg}{
+      padding-left: $m_lg+rem !important;
+    }
+  }
+  $m_lg:$m_lg + 0.25;
+  $c_lg:$c_lg+1;
+
+}
+////////////////////////
+$m_md:0;$c_md:0;
+@while($m_md < 7){
+  @include query(md){
+    .m-md-#{$c_md}{
+      margin: $m_md+rem !important;
+    }
+    .p-md-#{$c_md}{
+      padding: $m_md+rem !important;
+    }
+    .mx-md-#{$c_md}{
+      margin-right: $m_md+rem !important;
+      margin-left: $m_md+rem !important;
+    }
+    .px-md-#{$c_md}{
+      padding-right: $m_md+rem !important;
+      padding-left: $m_md+rem !important;
+    }
+    .my-md-#{$c_md}{
+      margin-top: $m_md+rem !important;
+      margin-bottom: $m_md+rem !important;
+    }
+    .py-md-#{$c_md}{
+      padding-top: $m_md+rem !important;
+      padding-bottom: $m_md+rem !important;
+    }
+    .mt-md-#{$c_md}{
+      margin-top: $m_md+rem !important;
+    }
+    .pt-md-#{$c_md}{
+      padding-top: $m_md+rem !important;
+    }
+    .mb-md-#{$c_md}{
+      margin-bottom: $m_md+rem !important;
+    }
+    .pb-md-#{$c_md}{
+      padding-bottom: $m_md+rem !important;
+    }
+    .mr-md-#{$c_md}{
+      margin-right: $m_md+rem !important;
+    }
+    .pr-md-#{$c_md}{
+      padding-right: $m_md+rem !important;
+    }
+    .ml-md-#{$c_md}{
+      margin-left: $m_md+rem !important;
+    }
+    .pl-md-#{$c_md}{
+      padding-left: $m_md+rem !important;
+    }
+  }
+  $m_md:$m_md + 0.25;
+  $c_md:$c_md+1;
+
+}
+////////////////////////
+$m_sm:0;$c_sm:0;
+@while($m_sm < 7){
+  @include query(sm){
+    .m-sm-#{$c_sm}{
+      margin: $m_sm+rem !important;
+    }
+    .p-sm-#{$c_sm}{
+      padding: $m_sm+rem !important;
+    }
+    .mx-sm-#{$c_sm}{
+      margin-right: $m_sm+rem !important;
+      margin-left: $m_sm+rem !important;
+    }
+    .px-sm-#{$c_sm}{
+      padding-right: $m_sm+rem !important;
+      padding-left: $m_sm+rem !important;
+    }
+    .my-sm-#{$c_sm}{
+      margin-top: $m_sm+rem !important;
+      margin-bottom: $m_sm+rem !important;
+    }
+    .py-sm-#{$c_sm}{
+      padding-top: $m_sm+rem !important;
+      padding-bottom: $m_sm+rem !important;
+    }
+    .mt-sm-#{$c_sm}{
+      margin-top: $m_sm+rem !important;
+    }
+    .pt-sm-#{$c_sm}{
+      padding-top: $m_sm+rem !important;
+    }
+    .mb-sm-#{$c_sm}{
+      margin-bottom: $m_sm+rem !important;
+    }
+    .pb-sm-#{$c_sm}{
+      padding-bottom: $m_sm+rem !important;
+    }
+    .mr-sm-#{$c_sm}{
+      margin-right: $m_sm+rem !important;
+    }
+    .pr-sm-#{$c_sm}{
+      padding-right: $m_sm+rem !important;
+    }
+    .ml-sm-#{$c_sm}{
+      margin-left: $m_sm+rem !important;
+    }
+    .pl-sm-#{$c_sm}{
+      padding-left: $m_sm+rem !important;
+    }
+  }
+  $m_sm:$m_sm + 0.25;
+  $c_sm:$c_sm+1;
+
+}
+
+
+
+
+
+
+
+////////// line height
+@for $lh from 0 through 10{
+  .lh-#{$lh}{
+    line-height: $lh !important;
+  }
+}
+///////// font size
+$fs:0.5;$of:1;
+@while($fs < 8){
+  .fs-#{$of}{
+    font-size: $fs+rem;
+  }
+  $fs:$fs+0.5;
+  $of:$of + 1
+}
+
+/////////////////
+$fs_xlg:0.5;$of_xlg:1;
+@while($fs_xlg<8){
+  @include query(xlg){
+    .fs-xlg-#{$of_xlg}{
+      font-size: $fs_xlg+rem !important;
+    }
+  }
+  $fs_xlg:$fs_xlg+0.5;
+  $of_xlg:$of_xlg+1;
+}
+//////////////////
+$fs_lg:0.5;$of_lg:1;
+@while($fs_lg<8){
+  @include query(lg){
+    .fs-lg-#{$of_lg}{
+      font-size: $fs_lg+rem !important;
+    }
+  }
+  $fs_lg:$fs_lg+0.5;
+  $of_lg:$of_lg+1;
+}
+/////////////////
+$fs_md:0.5;$of_md:1;
+@while($fs_md<8){
+  @include query(md){
+    .fs-md-#{$of_md}{
+      font-size: $fs_md+rem !important;
+    }
+  }
+  $fs_md:$fs_md+0.5;
+  $of_md:$of_md+1;
+}
+/////////////////
+$fs_sm:0.5;$of_sm:1;
+@while($fs_sm<8){
+  @include query(sm){
+    .fs-sm-#{$of_sm}{
+      font-size: $fs_sm+rem !important;
+    }
+  }
+  $fs_sm:$fs_sm+0.5;
+  $of_sm:$of_sm+1;
+}
+
+
+.fs-09{
+  font-size: 0.9rem !important;
+}
+.fs-08{
+  font-size: 0.8rem!important;
+}
+.fs-07{
+  font-size: 0.7rem!important;
+}
+.fs-06{
+  font-size: 0.6rem!important;
+}
+.fs-05{
+  font-size: 0.5rem!important;
+}
+
+@include query(xlg){
+  .fs-xlg-09{
+    font-size: 0.9rem !important;
+  }
+  .fs-xlg-08{
+    font-size: 0.8rem!important;
+  }
+  .fs-xlg-07{
+    font-size: 0.7rem!important;
+  }
+  .fs-xlg-06{
+    font-size: 0.6rem!important;
+  }
+  .fs-xlg-05{
+    font-size: 0.5rem!important;
+  }
+}
+@include query(lg){
+  .fs-lg-09{
+    font-size: 0.9rem !important;
+  }
+  .fs-lg-08{
+    font-size: 0.8rem!important;
+  }
+  .fs-lg-07{
+    font-size: 0.7rem!important;
+  }
+  .fs-lg-06{
+    font-size: 0.6rem!important;
+  }
+  .fs-lg-05{
+    font-size: 0.5rem!important;
+  }
+}
+@include query(md){
+  .fs-md-09{
+    font-size: 0.9rem !important;
+  }
+  .fs-md-08{
+    font-size: 0.8rem!important;
+  }
+  .fs-md-07{
+    font-size: 0.7rem!important;
+  }
+  .fs-md-06{
+    font-size: 0.6rem!important;
+  }
+  .fs-md-05{
+    font-size: 0.5rem!important;
+  }
+}
+@include query(sm){
+  .fs-sm-09{
+    font-size: 0.9rem !important;
+  }
+  .fs-sm-08{
+    font-size: 0.8rem!important;
+  }
+  .fs-sm-07{
+    font-size: 0.7rem!important;
+  }
+  .fs-sm-06{
+    font-size: 0.6rem!important;
+  }
+  .fs-sm-05{
+    font-size: 0.5rem!important;
+  }
+}
+//////// font wight
+$fw:100;$cw:1;
+@while($fw<1000){
+  .fw-#{$cw}{
+    font-weight: $fw!important;
+  }
+  $cw:$cw+1;
+  $fw:$fw + 100
+}
+///////// width height
+$wd:0.1;$cf:10;
+@while($wd < 1.1){
+  .w-#{$cf}{
+    width: percentage($wd)  !important;
+  }
+  .h-#{$cf}{
+    height: percentage($wd)!important;
+  }
+  $wd:$wd+0.1;
+  $cf:$cf + 10
+}
+/////////////////////////////////
+$wd_xlg:0.1;$cf_xlg:10;
+@while($wd_xlg < 1.1){
+  @include query(xlg){
+    .w-xlg-#{$cf_xlg}{
+      width: percentage($wd_xlg)  !important;
+    }
+    .h-xlg-#{$cf_xlg}{
+      height: percentage($wd_xlg)!important;
+    }
+  }
+  $wd_xlg:$wd_xlg+0.1;
+  $cf_xlg:$cf_xlg + 10
+
+}
+////////////////////////////////////
+$wd_lg:0.1;$cf_lg:10;
+@while($wd_lg < 1.1){
+  @include query(lg){
+    .w-lg-#{$cf_lg}{
+      width: percentage($wd_lg)  !important;
+    }
+    .h-lg-#{$cf_lg}{
+      height: percentage($wd_lg)!important;
+    }
+  }
+  $wd_lg:$wd_lg+0.1;
+  $cf_lg:$cf_lg + 10
+}
+//////////////////////////////////
+$wd_md:0.1;$cf_md:10;
+@while($wd_md < 1.1){
+  @include query(md){
+    .w-md-#{$cf_md}{
+      width: percentage($wd_md)  !important;
+    }
+    .h-md-#{$cf_md}{
+      height: percentage($wd_md)!important;
+    }
+  }
+  $wd_md:$wd_md+0.1;
+  $cf_md:$cf_md + 10
+}
+/////////////////////////////////
+$wd_sm:0.1;$cf_sm:10;
+@while($wd_sm < 1.1){
+  @include query(sm){
+    .w-sm-#{$cf_sm}{
+      width: percentage($wd_sm)  !important;
+    }
+    .h-sm-#{$cf_sm}{
+      height: percentage($wd_sm)!important;
+    }
+  }
+  $wd_sm:$wd_sm+0.1;
+  $cf_sm:$cf_sm + 10
+}
+
+
+
+
+
+.o-hidden{
+  overflow: hidden!important;
+}
+
+.m-auto{
+  margin: auto!important;
+}
