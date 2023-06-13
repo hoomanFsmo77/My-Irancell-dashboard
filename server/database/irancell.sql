@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2023 at 12:46 PM
+-- Generation Time: Jun 13, 2023 at 12:53 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -103,15 +103,16 @@ CREATE TABLE `users` (
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
   `profile` varchar(100) NOT NULL,
-  `charge` varchar(10) NOT NULL
+  `charge` varchar(10) NOT NULL,
+  `token` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `profile`, `charge`) VALUES
-(1, 'هومن', 'موسوی', '/public/img/profile.jpg', '5000');
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `profile`, `charge`, `token`) VALUES
+(1, 'هومن', 'موسوی', '/public/img/profile.jpg', '5000', '331aaae1-3f0c-4c51-afd0-57ffcb308927');
 
 --
 -- Indexes for dumped tables
