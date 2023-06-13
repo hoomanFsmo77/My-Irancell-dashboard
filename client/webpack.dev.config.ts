@@ -71,7 +71,13 @@ module.exports={
         }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: "index.html"
+            filename:'index.html',
+            template:'./index.html'
+
+        }),
+        new HtmlWebpackPlugin({
+            filename:'packets.html',
+            template:'./packets.html'
         })
     ],
     devServer: {

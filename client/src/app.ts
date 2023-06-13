@@ -1,6 +1,4 @@
-import './assets/app.scss';
-import 'materialize-css/dist/js/materialize.min';
-import ApexCharts from 'apexcharts'
+import './assets/app.scss'
 import Alpine from 'alpinejs'
 window.Alpine = Alpine
 Alpine.start()
