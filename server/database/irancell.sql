@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2023 at 12:53 PM
+-- Generation Time: Jun 13, 2023 at 04:39 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `irancell`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `chart`
+--
+
+CREATE TABLE `chart` (
+  `labels` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`labels`)),
+  `data` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`data`)),
+  `userID` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `chart`
+--
+
+INSERT INTO `chart` (`labels`, `data`, `userID`) VALUES
+('[7.1,7.2,7.3,7.4,7.4]', '[500,1000,2000,2500,1800]', 1);
 
 -- --------------------------------------------------------
 
@@ -90,7 +109,9 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `icon`, `title`, `max-date`, `isActive`) VALUES
 (1, 'fa-regular fa-envelope', 'بسته پیامک هفتگی', '1401-06-30', 1),
-(3, 'fa-solid fa-wifi', 'بسته اینترنت ماهانه', '1402-07-01', 1);
+(3, 'fa-solid fa-wifi', 'بسته اینترنت ماهانه', '1402-07-01', 1),
+(4, 'fa-regular fa-envelope', 'بسته پیامک هفتگی', '1401-06-30', 0),
+(5, 'fa-solid fa-wifi', 'بسته اینترنت ماهانه', '1402-07-01', 0);
 
 -- --------------------------------------------------------
 
@@ -104,15 +125,16 @@ CREATE TABLE `users` (
   `lastname` varchar(50) NOT NULL,
   `profile` varchar(100) NOT NULL,
   `charge` varchar(10) NOT NULL,
-  `token` text NOT NULL
+  `token` text NOT NULL,
+  `phone` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `profile`, `charge`, `token`) VALUES
-(1, 'هومن', 'موسوی', '/public/img/profile.jpg', '5000', '331aaae1-3f0c-4c51-afd0-57ffcb308927');
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `profile`, `charge`, `token`, `phone`) VALUES
+(1, 'هومن', 'موسوی', '/public/img/profile.jpg', '5000', '331aaae1-3f0c-4c51-afd0-57ffcb308927', '09921929653');
 
 --
 -- Indexes for dumped tables
@@ -162,7 +184,7 @@ ALTER TABLE `sales`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`

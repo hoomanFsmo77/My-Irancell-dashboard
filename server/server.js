@@ -43,9 +43,11 @@ app.get('/api/services/:isActive',(req,res)=>{
     }
 })
 
-app.get('/api/recommend-packs',(req,res)=>{
+app.get('/api/recommend-packs/:id',(req,res)=>{
+    const id=req.params.id;
     database('recommend_packet').
     select('*').
+    where({userID:id}).
     then(response=>{
         res.status(200).send(JSON.stringify(response))
     }).catch(err=>{
@@ -53,9 +55,11 @@ app.get('/api/recommend-packs',(req,res)=>{
     })
 })
 
-app.get('/api/user-buy',(req,res)=>{
+app.get('/api/user-buy/:id',(req,res)=>{
+    const id=req.params.id;
     database('sales').
     select('*').
+    where({userID:id}).
     then(response=>{
         res.status(200).send(JSON.stringify(response))
     }).catch(err=>{
@@ -63,6 +67,16 @@ app.get('/api/user-buy',(req,res)=>{
     })
 })
 
-
+app.get('/api/chart/:id',(req,res)=>{
+    const id=req.params.id;
+    database('chart').
+    select('*').
+   where({userID:1}).
+    then(response=>{
+        res.status(200).send(JSON.stringify(response))
+    }).catch(err=>{
+        res.status(401).send('error in db')
+    })
+})
 
 app.listen(process.env.PORT,()=>console.log(`server is running on port ${process.env.PORT}`))

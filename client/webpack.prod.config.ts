@@ -75,8 +75,13 @@ module.exports={
         }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: "index.html"
-            // publicPath:"./dist/"
+            filename:'index.html',
+            template:'./index.html'
+
+        }),
+        new HtmlWebpackPlugin({
+            filename:'packets.html',
+            template:'./packets.html'
         })
     ]
 }
